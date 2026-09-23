@@ -128,9 +128,9 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
- background: radial-gradient(50% 100% at 50% 100%, #FFC600 0%, #930013 100%);
+ background: #1B59DA;
   /* dark panel bg */
-  border: 1px solid #FFC600;
+  border: 1px solid #2A55B2;
   border-radius: 24px;
   list-style: none;
   padding: 0;
@@ -170,7 +170,7 @@ nav {
   color: #ffffff;
   text-decoration: none;
   padding: 11px 20px;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -185,8 +185,8 @@ nav {
 
 .dropdown-service-list a:hover,
 .dropdown-service-list a.active {
-  background-color: #FFC600;
-  color: #930013;
+  background-color: #DE4442;
+  color: #FFFFFF;
 }
 
 /* Service icon wrapper */
