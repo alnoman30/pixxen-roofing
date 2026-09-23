@@ -1972,6 +1972,47 @@
       </div>
     </section>
 
+    <!--  -->
+    <section class="w-full bg-white overflow-hidden">
+  <!-- Outer grid layout taking full width of the screen, with the image stretching to the edge -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 items-stretch">
+    
+    <!-- Left Side: Image stretches fully to the screen edge/container edge without max-w restrictions -->
+    <div class="lg:col-span-6 order-2 lg:order-1 relative w-full h-full min-h-[350px] sm:min-h-[450px] lg:min-h-[600px] flex">
+      <div class="relative w-full h-full">
+        <img 
+          src="assets/images/roofers-city-hero.png" 
+          alt="Roofers working on a metal roof" 
+          class="absolute inset-0 w-full h-full object-cover object-center"
+        />
+      </div>
+    </div>
+
+    <!-- Right Side: Content wrapped with proper padding/container constraints -->
+    <div class="lg:col-span-6 order-1 lg:order-2 flex flex-col justify-center py-12 lg:py-20 px-4 sm:px-6 lg:px-12 xl:px-16">
+      <div class="max-w-175 text-center lg:text-start mx-auto lg:mx-0">
+        <h2 class="roofing-heading-reveal anton text-[#1F2021] text-[28px] md:text-[40px] lg:text-[52px] xl:text-[64px] font-normal leading-[110%] uppercase">
+          Roofers Website Design in Your City
+        </h2>
+        
+        <p class="farro text-[#3B3F42] text-xs md:text-base lg:text-lg font-normal leading-[150%] mt-3 md:mt-4 xl:mt-6">
+          Roofing is hyperlocal and weather-driven. Homeowners shortlist roofers by service area first, manufacturer certifications second, reviews third.
+        </p>
+
+        <!-- Cities Grid / Tags -->
+        <div class="flex flex-wrap gap-2 mb-6 lg:mb-8">
+          <span class="bg-[#121C3D] text-white font-medium text-xs sm:text-sm px-3 py-1.5 rounded uppercase tracking-wider">Dallas</span>
+        </div>
+
+        <p class="farro text-[#3B3F42] text-xs md:text-base lg:text-lg font-normal leading-[150%]">
+          Don't see your city? We work with roofers across the US and Canada. Hail-belt cities (Dallas, OKC, Denver) lean storm-response heavy, coastal cities lean wind-and-water resistance, snow-belt cities lean ice-dam and ventilation. Climate drives content emphasis.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
     <!--  Roofing Website at Only $999 -->
     <section
       class="cta-sections overflow-hidden section-padding bg-[#1F2021] text-center relative"
