@@ -1,0 +1,2355 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>roofing control</title>
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <!-- swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-white">
+    <nav class="bg-[#0135A3] border-b border-[#2A55B2]">
+      <div class="mx-auto">
+        <div class="flex items-center justify-between h-12">
+          <div class="flex items-center sm:gap-4 gap-3">
+            <!-- Desktop Sidebar Button -->
+            <button
+              id="desktop-sidebar"
+              aria-label="Toggle menu"
+              class="hidden lg:block text-[#10202F] hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#0135A3] border-r border-r-[#2A55B2] hover:bg-[#2A55B2] cursor-pointer transition-colors"
+            >
+              <svg
+                width="42"
+                height="8"
+                viewBox="0 0 42 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="42" height="2" fill="#FFFFFF" />
+                <rect y="6" width="42" height="2" fill="#FFFFFF" />
+              </svg>
+            </button>
+            <!-- Mobile Hamburger -->
+            <button
+              id="mobile-menu-toggle"
+              class="lg:hidden text-white hover:text-[#0751A4] p-2 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="12" width="32" height="2" fill="#FFFFFF" />
+                <rect y="18" width="32" height="2" fill="#FFFFFF" />
+              </svg>
+            </button>
+            <a href="index.html" class="flex items-center">
+              <!-- replace with your logo img -->
+              <img
+                src="assets/images/roofing-pixxen-logo.svg"
+                alt="Pixxen"
+                class="img-fluid sm:w-auto w-34"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 farro">
+            <!-- ====== SERVICES DROPDOWN ====== -->
+            <div class="desktop-dropdown">
+              <a
+                href="#services"
+                class="text-white hover:text-[#DE4442] transition-colors text-sm xl:text-base font-medium leading-5 desktop-dropdown-toggle"
+              >
+                Services<span class="desktop-dropdown-icon ml-1">+</span>
+              </a>
+
+              <!-- Mega panel: list LEFT + grid RIGHT -->
+              <div class="desktop-dropdown-menu">
+                <!-- LEFT: service items -->
+                <ul class="dropdown-service-list">
+                  <li>
+                    <a href="mobile-app-design.html">
+                      <span class="service-icon">
+                        <!-- Mobile icon -->
+                        <img
+                          src="assets/images/dropdownicon1.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      MOBILE APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-design.html">
+                      <span class="service-icon">
+                        <!-- Dashboard/pie icon -->
+                        <img
+                          src="assets/images/dropdownicon2.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      DASHBOARD DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="website-design.html">
+                      <span class="service-icon">
+                        <!-- Monitor icon -->
+                        <img
+                          src="assets/images/dropdownicon3.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEBSITE DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="web-application-design.html">
+                      <span class="service-icon">
+                        <!-- Laptop icon -->
+                        <img
+                          src="assets/images/dropdownicon4.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEB APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="saas-design.html">
+                      <span class="service-icon">
+                        <!-- Desktop/screen icon -->
+                        <img
+                          src="assets/images/dropdownicon5.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      SAAS DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="branding-design.html">
+                      <span class="service-icon">
+                        <!-- Brand/star icon -->
+                        <img
+                          src="assets/images/dropdownicon6.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      BRANDING
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- right: items -->
+                <div class="flex items-end">
+                  <img src="assets/images/dropdown-shape.svg" alt />
+                </div>
+              </div>
+              <!-- end .desktop-dropdown-menu -->
+            </div>
+            <!-- ====== end SERVICES ====== -->
+
+            <a
+              href="case-study.html"
+              class="text-white hover:text-[#DE4442] transition-colors text-sm xl:text-base font-medium leading-5"
+              >Case Studies</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-[#DE4442] transition-colors text-sm xl:text-base font-medium leading-5"
+              >About</a
+            >
+            <a
+              href="blog.html"
+              class="text-white hover:text-[#DE4442] transition-colors text-sm xl:text-base font-medium leading-5"
+              >Blog</a
+            >
+            <a
+              href="contact.html"
+              class="text-white hover:text-[#DE4442] transition-colors text-sm xl:text-base font-medium leading-5"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex items-center anton">
+            <a
+              href="contact.html"
+              class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-[#2A55B2] transition-all text-sm xl:text-base font-medium leading-5 farro"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-sm xl:text-lg font-normal text-[#ffffff] uppercase"
+                  >Contact</span
+                >
+                <span
+                  class="t-down text-sm xl:text-lg font-normal text-[#ffffff] uppercase"
+                  >Contact</span
+                >
+              </div>
+            </a>
+            <a
+              href="contact.html"
+              class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#1B59DA] text-white transition-colors text-sm xl:text-base font-medium leading-5 farro"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-sm xl:text-base font-medium text-white uppercase"
+                  >Let’s Connect</span
+                >
+                <span
+                  class="t-down text-sm xl:text-base font-medium text-white uppercase"
+                  >Let’s Connect</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- Mobile LET'S CONNECT -->
+          <a
+            href="contact.html"
+            class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-[#1B59DA] text-white transition-colors text-sm xl:text-base font-medium leading-5 farro"
+          >
+            <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+              <span
+                class="t-up text-sm xl:text-base font-medium text-white uppercase"
+                >Let’s Connect</span
+              >
+              <span
+                class="t-down text-sm xl:text-base font-medium text-white uppercase"
+                >Let’s Connect</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+      <!-- Dark overlay -->
+      <div id="mobile-overlay" class="mobile-overlay"></div>
+
+      <!-- Wrapper holds both panels -->
+      <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+        <!-- PANEL 1: Main Menu -->
+        <div id="mm-main" class="mm-panel mm-main">
+          <div class="mm-main-header">
+            <span class="mm-title">Menu</span>
+            <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mm-nav-list">
+            <li>
+              <!-- SERVICES: opens panel 2 -->
+              <button
+                id="mm-services-trigger"
+                class="mm-nav-link w-full text-left"
+                style="background: none; border: none; cursor: pointer"
+              >
+                SERVICES
+                <span class="mm-plus">+</span>
+              </button>
+            </li>
+            <li>
+              <a href="case-study.html" class="mm-nav-link">case studies</a>
+            </li>
+            <li><a href="about.html" class="mm-nav-link">about</a></li>
+            <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+            <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+            <li><a href="team.html" class="mm-nav-link">team</a></li>
+            <li>
+              <div class="flex justify-start mt-8 mx-4">
+                <a
+                  href="contact.html"
+                  class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-[#1B59DA] font-normal xl:font-medium farro transition-all duration-200"
+                >
+                  <div class="btn-inner relative z-2 flex items-center gap-3">
+                    <div
+                      class="icon-circle h-6 w-6 rounded-full bg-[#ffffff] flex items-center justify-center overflow-hidden"
+                    >
+                      <div class="icon-slider flex flex-row">
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#1B59DA"
+                          />
+                        </svg>
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#1B59DA"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-mask h-5 overflow-hidden flex flex-col">
+                      <span
+                        class="t-up text-sm xl:text-base font-normal xl:font-medium text-[#FFFFFF]"
+                        >Let’s Connect</span
+                      >
+                      <span
+                        class="t-down text-sm xl:text-base font-normal xl:font-medium text-[#FFFFFF]"
+                        >Let’s Connect</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- LET'S CONNECT -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/roofing-mobile-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: Services -->
+        <div id="mm-services" class="mm-panel mm-services">
+          <div class="mm-services-header">
+            <button id="mm-back" class="mm-back-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M19 12H5M11 6l-6 6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              BACK
+            </button>
+            <button
+              id="mm-services-close"
+              class="mm-close-btn"
+              aria-label="Close menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <div class="mm-services-title">Services</div>
+
+            <!-- 2×3 grid -->
+            <div class="mm-services-grid">
+              <!-- Mobile App Design -->
+              <a href="mobile-app-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon1.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">MOBILE APP DESIGN</span>
+              </a>
+              <!-- Dashboard Design -->
+              <a href="dashboard-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon2.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">DASHBOARD DESIGN</span>
+              </a>
+              <!-- Website Design -->
+              <a href="website-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon3.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEBSITE DESIGN</span>
+              </a>
+              <!-- Web App Design -->
+              <a href="web-application-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon4.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEB APP DESIGN</span>
+              </a>
+              <!-- SaaS Design -->
+              <a href="saas-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon5.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">SAAS DESIGN</span>
+              </a>
+              <!-- Branding -->
+              <a href="branding-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon6.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">BRANDING</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- decorative bottom grid -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/roofing-mobile-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end mobile-menu-wrapper -->
+    </nav>
+
+    <!-- FULL PAGE MENU -->
+    <div
+      id="pixxen-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Main navigation"
+    >
+      <!-- TOP PANEL: slides in from top -->
+      <div class="menu-top" id="menu-top">
+        <!-- Grid decoration top-left -->
+        <div class="deco-cross" style="top: 0px; left: 0px">
+          <img src="assets/images/large-menu-top.svg" class="img-fluid" alt />
+        </div>
+
+        <!-- Grid decoration top-right area -->
+        <div class="deco-cross" style="bottom: 0px; right: 0px">
+          <img
+            src="assets/images/large-menu-bottom.svg"
+            class="img-fluid"
+            alt
+          />
+        </div>
+
+        <!-- LET'S CONNECT -->
+
+        <a
+          href="contact.html"
+          class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#1B59DA] text-white transition-colors text-sm xl:text-base font-medium leading-5 farro"
+        >
+          <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+            <span
+              class="t-up text-sm xl:text-base font-medium text-white uppercase"
+              >Let’s Connect</span
+            >
+            <span
+              class="t-down text-sm xl:text-base font-medium text-white uppercase"
+              >Let’s Connect</span
+            >
+          </div>
+        </a>
+
+        <!-- CLOSE BUTTON -->
+        <div class="close-wrap">
+          <button class="close-btn" id="menu-close" aria-label="Close menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M6 18L18 6"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-columns" id="nav-columns">
+          <div class="nav-col" id="col-services">
+            <div class="nav-col-title">Services</div>
+            <ul>
+              <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+              <li><a href="dashboard-design.html">Dashboard Design</a></li>
+              <li><a href="website-design.html">Website Design</a></li>
+              <li><a href="web-application-design.html">Web App Design</a></li>
+              <li><a href="saas-design.html">SaaS Design</a></li>
+              <li><a href="branding-design.html">Branding</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-pixxen">
+            <div class="nav-col-title">Pixxen</div>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="case-study.html">Case Studies</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-resources">
+            <div class="nav-col-title">Resources</div>
+            <ul>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-legal">
+            <div class="nav-col-title">Legal</div>
+            <ul>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- /menu-top -->
+
+      <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+      <div class="menu-bottom" id="menu-bottom">
+        <!-- LOGO -->
+        <div class="bottom-logo" id="bottom-logo">
+          <img
+            src="assets/images/roofing-footer-pixxen-logo.svg"
+            class="img-fluid"
+            alt="largemenu"
+          />
+        </div>
+      </div>
+      <!-- /menu-bottom -->
+    </div>
+    <!-- / FULL PAGE MENU -->
+
+    <!-- Banner section -->
+    <section
+      class="roofing-services-banner relative bg-[#042C53] pt-12 overflow-hidden"
+    >
+      <div class="min-h-[95vh]">
+        <!-- 50 / 50 row -->
+        <div class="flex flex-col xl:flex-row xl:items-stretch min-h-[95vh]">
+          <!-- ===== LEFT (50% at XL) ===== -->
+          <div
+            class="w-full xl:w-1/2 flex flex-col px-6 py-12 lg:pl-19.25 lg:pr-10 text-white z-10"
+          >
+            <!-- Left side inner contents start -->
+            <div class="xl:max-w-184">
+              <h1
+                class="roofing-hero-title anton text-white text-[40px] md:text-[48px] lg:text-[80px] 2xl:text-[90px] font-normal leading-none uppercase"
+              >
+                Roofing Website Design Company For Leads Generation
+              </h1>
+
+              <p
+                class="roofing-hero-desc farro text-white text-xs md:text-base lg:text-lg font-normal leading-[150%] mt-4 md:mt-5 lg:mt-8"
+              >
+                Logo, branding, a custom roofing website, SEO content, on-page
+                optimization, and Google Business Profile setup—all built around
+                how homeowners search, compare, and choose a roofer when they
+                need help fast.
+              </p>
+
+              <!-- Pricing / Callout Box -->
+              <div class="mt-4 md:mt-5 lg:mt-8">
+                <div
+                  class="roofing-hero-price inline-flex items-center gap-4 md:gap-6"
+                >
+                  <!-- Left side: Vertical line + Text -->
+                  <div class="flex items-center gap-4 md:gap-6">
+                    <!-- Added self-stretch so the line matches the height of the text wrapper -->
+                    <div class="w-0.5 self-stretch bg-white rounded-full"></div>
+
+                    <div
+                      class="anton text-white text-sm md:text-xl lg:text-2xl font-normal leading-[120%] uppercase"
+                    >
+                      Everything<br />Included In
+                    </div>
+                  </div>
+
+                  <!-- Right side: Price + One-Time badge -->
+                  <div class="flex items-baseline gap-1">
+                    <span
+                      class="anton text-white text-[36px] md:text-[48px] lg:text-[60px] font-normal leading-none uppercase"
+                      >$999</span
+                    >
+                    <span
+                      class="anton text-white text-base lg:text-xl font-normal leading-none uppercase"
+                      >One-Time</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Primary button -->
+              <div class="mt-4 md:mt-5 lg:mt-8">
+                <a
+                  href="#"
+                  class="group roofing-hero-cta w-fit bg-white hover:bg-[#DE4442] flex justify-center items-center gap-6 pl-8 pr-1 py-1 transition-colors duration-300 ease-out farro"
+                >
+                  <span
+                    class="text-[#1F2021] group-hover:text-white text-sm md:text-base lg:text-lg font-medium leading-none transition-colors duration-300 ease-out"
+                    >Book a Free 30-Min Call</span
+                  >
+                  <span
+                    class="relative w-10 h-10 md:w-12 md:h-12 lg:w-13 lg:h-13 bg-[#1B59DA] group-hover:bg-white flex justify-center items-center shrink-0 overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105"
+                  >
+                    <img
+                      src="assets/images/roofing-cta-arrow-icon-white.svg"
+                      alt="arrow"
+                      class="absolute w-5 h-5 lg:w-6 lg:h-6 transition-all duration-300 ease-out group-hover:translate-x-8 group-hover:-translate-y-8 group-hover:opacity-0"
+                    />
+                    <img
+                      src="assets/images/roofing-cta-arrow-icon-red.svg"
+                      alt="Arrow"
+                      class="absolute w-5 h-5 lg:w-6 lg:h-6 -translate-x-8 translate-y-8 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
+                    />
+                  </span>
+                </a>
+              </div>
+
+              <!-- Features / Trust Badges Grid -->
+              <div
+                class="roofing-hero-checklist mt-4 md:mt-5 lg:mt-8 grid grid-cols-1 sm:grid-cols-2 w-fit gap-x-8 gap-y-2 farro text-white text-xs md:text-base lg:text-lg font-normal leading-[150%]"
+              >
+                <div class="roofing-hero-check-item flex items-center gap-3">
+                  <img
+                    src="assets/images/roofing-banner-check.svg"
+                    alt="check"
+                    class="w-4.5 md:w-6 lg:w-6.75 object-contain"
+                  />
+                  <span>Trusted by independent roofers</span>
+                </div>
+                <div class="roofing-hero-check-item flex items-center gap-3">
+                  <img
+                    src="assets/images/roofing-banner-check.svg"
+                    alt="check"
+                    class="w-4.5 md:w-6 lg:w-6.75 object-contain"
+                  />
+                  <span>Serving the US & Canada</span>
+                </div>
+                <div class="roofing-hero-check-item flex items-center gap-3">
+                  <img
+                    src="assets/images/roofing-banner-check.svg"
+                    alt="check"
+                    class="w-4.5 md:w-6 lg:w-6.75 object-contain"
+                  />
+                  <span>Fast 14-day delivery</span>
+                </div>
+                <div class="roofing-hero-check-item flex items-center gap-3">
+                  <img
+                    src="assets/images/roofing-banner-check.svg"
+                    alt="check"
+                    class="w-4.5 md:w-6 lg:w-6.75 object-contain"
+                  />
+                  <span>Full ownership · No retainers</span>
+                </div>
+              </div>
+            </div>
+            <!-- Left side inner contents ends -->
+          </div>
+
+          <!-- ===== RIGHT (50% at XL) ===== -->
+          <div
+            class="relative w-full xl:w-1/2 overflow-hidden flex items-end justify-end mt-8 xl:mt-0"
+          >
+            <div
+              class="scene relative w-full h-full flex items-end justify-end"
+            >
+              <img
+                class="roofing-hero-img block w-full max-w-125 md:max-w-175 xl:max-w-none h-auto xl:max-h-full object-contain object-bottom select-none pointer-events-none"
+                src="assets/images/full-shot-man-working-roof.webp"
+                alt="Roofer working on a roof"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Your Roofing Website Most Of Case Fails Capture Homeowner Leads  -->
+    <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- Grid Container: Left text & Right cards -->
+        <div
+          class="grid grid-cols-1 xl:grid-cols-12 gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+        >
+          <!-- Left Column: Heading & Description -->
+          <div class="xl:col-span-5 flex flex-col text-center xl:text-start">
+            <div
+              class="flex flex-col gap-3 lg:gap-4 xl:gap-6 xl:sticky xl:top-20"
+            >
+              <h2
+                class="roofing-heading-reveal anton text-[#1F2021] text-[28px] md:text-[40px] lg:text-[52px] xl:text-[64px] font-normal leading-[110%] uppercase"
+              >
+                Why Your Roofing Website Most Of Case Fails Capture Homeowner
+                Leads
+              </h2>
+
+              <p
+                class="farro text-[#3B3F42] text-xs md:text-base lg:text-lg font-normal leading-[150%]"
+              >
+                Independent roofers compete against out-of-state storm chasers,
+                aggregator lead-buys, and national franchises spending millions
+                on SEO. Most roofing sites we audit are leaking qualified
+                inspections in ways the owner hasn't noticed yet.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: 2x2 Grid of Cards -->
+          <div
+            class="xl:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-stretch"
+          >
+            <!-- Card 1 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  No Insurance-Claim Expertise Messaging
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Storm-damage claims are the highest-margin work in most
+                  markets, and the homeowner searching insurance-approved roofer
+                  bounces from any site that does not mention claim assistance,
+                  supplements, or carrier experience.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="roofing-feature-card h-full roofing-feature-card--red bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Financing partnerships hidden or missing
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Average residential reroof in 2026 hit $14,500. Without
+                  GreenSky, Sunlight Financial, or Service Finance visible, you
+                  lose every cash-strapped homeowner to the competitor whose
+                  starting-at messaging closes the deal.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  License and Bonding Info Buried in the Footer
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  When roofing pros lack prominent licensing, bonding,
+                  machine-stamp or state-specific certification badge placement
+                  verified by third-party seals, trust is lost, the visitor
+                  flags them as unlicensed stormchasers, and they bounce for
+                  rivals.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Generic Site That Looks Like a 2018 Contractor Template
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Home inspectors and roofing pros operate across America — on
+                  side lots, tricky-access spaces, multi-story gables,
+                  neighborhood build outs. If your site looks dated, visitors
+                  discount your firm.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  No Manufacturer Certifications Shown
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  GAF Master Elite, Owens Corning, CertainTeed ShingleMaster,
+                  etc., are essential seals of trust — when website visitors
+                  don’t see premium manufacturer statuses prominent, they click
+                  away and choose a competitor who has the badges front and
+                  center.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  No Service Area Map – Wasting Estimates
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Specific cities, ZIPs, service radius and on-site crew
+                  dispatch shown on an interactive map eliminate spam requests
+                  and regular your area of priority care.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Quote Form Takes 11 Fields and 3 Minutes
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Local homeowners want address, roof type, approximate square
+                  footage, and quick quote in 30 seconds... down payment terms,
+                  permits, and inspection dates should wait for the roofing
+                  pro’s proper consultation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Material Options Page Missing Entirely?
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Asphalt vs metal vs tile vs slate — homeowners research
+                  material options before requesting quotes. Not having a pages
+                  hurts the firm's credibility and search traffic.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--red h-full bg-[#F8EFEF] p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/roofing-red-xshape.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/roofing-white-xshape.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  No Storm Response Messaging After Major Weather
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Hail and high wind storms spark local demand, but failing to
+                  quickly update site with urgent alert banners or emergency
+                  dispatch phone numbers sends the surge of clicks straight to
+                  greedy out-of-town operators.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you'd pay separately vs what you pay us -->
+    <section
+      class="bg-[linear-gradient(180deg,#0135A3_0%,#D0E5F6_100%)] py-12 md:py-16 lg:py-20 xl:py-24"
+    >
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-220 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="roofing-heading-reveal anton text-white text-[28px] md:text-[40px] lg:text-[52px] xl:text-[64px] font-normal leading-[110%] uppercase"
+          >
+            What you'd pay separately vs what you pay us
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="farro text-white text-xs md:text-base lg:text-lg font-normal leading-[150%] mt-3 md:mt-4 xl:mt-6"
+          >
+            Six separate services from six providers, or one package, one team,
+            one fixed price. Every deliverable built specifically for how
+            roofers clients research and buy.
+          </p>
+        </div>
+
+        <!-- Pricing Breakdown Grid Container -->
+        <div class="grid grid-cols-1 gap-0.5 text-left max-w-220 mx-auto">
+          <!-- Item 1: Logo & Brand Identity -->
+          <div
+            class="group relative bg-white flex items-start justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 roofing-clip-top-left overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-[#DE4442] before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/logo-brand-identity.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  Logo - Brand Identity
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  Logo, palette, typography, brand kit. Confident roofing
+                  aesthetic — durable, weather-aware, not a storm-chaser
+                  knockoff.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#DE4442]"
+              >
+                $400+
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 2: Custom 7-Page Roofing Website -->
+          <div
+            class="group relative bg-white flex items-start justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 roofing-clip-top-left overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-[#DE4442] before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/custom-roofing-website.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  Custom 7-Page Roofing Website
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  Home, Services, Materials, Storm response, Financing, About,
+                  Contact. Mobile-first, sub-2s load.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#DE4442]"
+              >
+                $1,800+
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 3: SEO Content with Real Keyword Research -->
+          <div
+            class="group relative bg-white flex items-start justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 roofing-clip-top-left overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-[#DE4442] before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/seo-content-with-real-keyword-research.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  SEO Content with Real Keyword Research
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  Page copy targeting roof repair, hail-damage roofer, and metal
+                  roof contractor terms by city and neighborhood.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#DE4442]"
+              >
+                $800+
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 4: Technical On-Page SEO Setup -->
+          <div
+            class="group relative bg-white flex items-start justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 roofing-clip-top-left overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-[#DE4442] before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/technical-on-page-seo-setup.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  Technical On-Page SEO Setup
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  RoofingContractor and LocalBusiness schema, meta titles per
+                  service, internal linking, sitemap, Search Console.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#DE4442]"
+              >
+                $500+
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 5: Google Business Profile Optimization -->
+          <div
+            class="group relative bg-white flex items-start justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 roofing-clip-top-left overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-[#DE4442] before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/google-business-profile-optimization.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  Google Business Profile Optimization
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  Categories, services, photos, NAP cleanup. Critical for
+                  'roofer near me' searches.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#DE4442]"
+              >
+                $400+
+              </span>
+            </div>
+          </div>
+
+          <!-- Item 6: 30 Days Post-Launch Support -->
+          <div
+            class="group relative bg-white flex items-start justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 roofing-clip-top-left overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-[#DE4442] before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-start gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/30-days-post-launch-support.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  30 Days Post-Launch Support
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  Bug fixes, content updates, CMS training, A/B test of primary
+                  lead capture.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-right shrink-0">
+              <span
+                class="anton text-[#1F2021] text-lg lg:text-2xl font-normal leading-[120%] uppercase transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#DE4442]"
+              >
+                $300+
+              </span>
+            </div>
+          </div>
+
+          <!-- Total Elsewhere Row -->
+          <div
+            class="group relative bg-[#DE4442] flex items-center justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-white before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-center gap-4 sm:gap-6">
+              <div
+                class="w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 shrink-0"
+              >
+                <img
+                  src="assets/images/roofing-total-elsewhere.svg"
+                  class="w-full h-full object-contain"
+                  alt="Icon"
+                />
+              </div>
+
+              <h3
+                class="anton text-white text-lg lg:text-2xl font-normal leading-[120%] uppercase"
+              >
+                Total elsewhere
+              </h3>
+            </div>
+
+            <div class="flex items-center text-right shrink-0">
+              <span
+                class="anton text-white text-lg lg:text-2xl font-normal leading-[120%] uppercase line-through"
+              >
+                $4,200+
+              </span>
+            </div>
+          </div>
+
+          <!-- Pixxen Roofing Pack Banner -->
+          <div
+            class="group relative bg-[#1B59DA] flex items-center justify-between p-4 md:p-5 lg:p-6 gap-3 lg:gap-4 xl:gap-6 overflow-hidden transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:shadow-[0_12px_30px_-14px_rgba(31,32,33,0.18)] before:content-[''] before:absolute before:left-0 before:top-0 before:w-1 before:h-full before:bg-white before:origin-top before:scale-y-0 before:transition-transform before:duration-800 before:ease-[cubic-bezier(0.19,1,0.22,1)] hover:before:scale-y-100"
+          >
+            <div class="flex items-center gap-4 sm:gap-6">
+              <div class="flex flex-col">
+                <h3
+                  class="anton text-white text-2xl lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase mb-2.5 xl:mb-3"
+                >
+                  Pixxen Roofing Pack
+                </h3>
+
+                <p
+                  class="farro text-white text-xs md:text-sm xl:text-base font-normal leading-[150%] max-w-146.25"
+                >
+                  Everything above. One team, 14-day delivery.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center text-right shrink-0">
+              <span
+                class="anton text-white text-[32px] md:text-[34px] lg:text-[40px] xl:text-[48px] font-normal leading-[120%] uppercase"
+              >
+                $999
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Disclaimer -->
+        <p
+          class="farro text-[#3B3F42] text-xs md:text-base lg:text-sm text-center font-medium leading-[150%] mt-8 max-w-216 mx-auto"
+        >
+          No retainers. No monthly lock-in. You own the site, the code, and the
+          domain on day one. Roofing CRM (AccuLynx, JobNimbus, RoofSnap) and
+          measurement software (EagleView, CompanyCam) subscriptions are
+          separate.
+        </p>
+      </div>
+    </section>
+
+    <!--  Pay as the Work Is Delivered -->
+    <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-220 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="roofing-heading-reveal anton text-[#1F2021] text-[28px] md:text-[40px] lg:text-[52px] xl:text-[64px] font-normal leading-[110%] uppercase"
+          >
+            Pay as the Work Is Delivered
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="farro text-[#3B3F42] text-xs md:text-base lg:text-lg font-normal leading-[150%] mt-3 md:mt-4 xl:mt-6"
+          >
+            Pay in three simple milestones as your project progresses, and
+            review every stage before you make the next payment.
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-stretch"
+        >
+          <!-- Card 1 -->
+          <div
+            class="group bg-[#1F2021] roofing-clip-top-bottom p-[1.5px] transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:bg-[#1B59DA] hover:-translate-y-2 hover:shadow-[0_24px_50px_-16px_rgba(27,89,218,0.35)]"
+          >
+            <div
+              class="roofing-clip-top-bottom relative z-10 bg-white p-4 md:p-5 lg:p-6 xl:p-8 flex flex-col justify-between h-full"
+            >
+              <div>
+                <!-- Top Badge -->
+                <div
+                  class="inline-flex items-center justify-center gap-2 bg-[#1B59DA] anton text-white text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-6 pr-2.5 pl-4 py-1.5 md:pr-3 md:pl-5 uppercase mb-4 md:mb-5 xl:mb-8 [clip-path:polygon(12px_0,100%_0,100%_100%,0_100%,0_12px)] transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:bg-[#121C3D]"
+                >
+                  <img
+                    src="assets/images/roofing-payment-pen.svg"
+                    alt=""
+                    class="w-3.5 md:w-4.5 lg:w-6 object-contain"
+                  />
+                  Start
+                </div>
+
+                <!-- Title & Description -->
+                <h3
+                  class="anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase mb-3 md:mb-2 lg:mb-3 xl:mb-4"
+                >
+                  Brand Foundation
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%]"
+                >
+                  We start by creating your logo, visual identity, and design
+                  system to create an unforgettable first impression.
+                </p>
+              </div>
+
+              <!-- Bottom Payment Details -->
+              <div class="mt-4 sm:mt-6 md:mt-7 lg:mt-8">
+                <span
+                  class="block anton text-[#1F2021] text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-[120%] uppercase mb-1.5 md:mb-2"
+                >
+                  KICKOFF
+                </span>
+                <div
+                  class="anton text-[#1B59DA] text-[30px] md:text-[32px] lg:text-[36px] xl:text-[48px] font-normal leading-[120%] uppercase mb-1.5 md:mb-2 transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#121C3D]"
+                >
+                  PAY 50%
+                </div>
+                <span
+                  class="anton text-[#1F2021] text-xs lg:text-base font-normal leading-[120%] uppercase"
+                >
+                  Due at project start
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="group bg-[#1F2021] roofing-clip-top-bottom p-[1.5px] transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:bg-[#1B59DA] hover:-translate-y-2 hover:shadow-[0_24px_50px_-16px_rgba(27,89,218,0.35)]"
+          >
+            <div
+              class="roofing-clip-top-bottom relative z-10 bg-white p-4 md:p-5 lg:p-6 xl:p-8 flex flex-col justify-between h-full"
+            >
+              <div>
+                <!-- Top Badge -->
+                <div
+                  class="inline-flex items-center justify-center gap-2 bg-[#1B59DA] anton text-white text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-6 pr-2.5 pl-4 py-1.5 md:pr-3 md:pl-5 uppercase mb-4 md:mb-5 xl:mb-8 [clip-path:polygon(12px_0,100%_0,100%_100%,0_100%,0_12px)] transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:bg-[#121C3D]"
+                >
+                  <img
+                    src="assets/images/roofing-payment-layers.svg"
+                    alt=""
+                    class="w-3.5 md:w-4.5 lg:w-6 object-contain"
+                  />
+                  Midway
+                </div>
+
+                <!-- Title & Description -->
+                <h3
+                  class="anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase mb-3 md:mb-2 lg:mb-3 xl:mb-4"
+                >
+                  Website Design
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%]"
+                >
+                  Due once you have reviewed and approved your logo, brand
+                  direction, and website design. Development then moves ahead.
+                </p>
+              </div>
+
+              <!-- Bottom Payment Details -->
+              <div class="mt-4 sm:mt-6 md:mt-7 lg:mt-8">
+                <span
+                  class="block anton text-[#1F2021] text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-[120%] uppercase mb-1.5 md:mb-2"
+                >
+                  Mid-Project
+                </span>
+                <div
+                  class="anton text-[#1B59DA] text-[30px] md:text-[32px] lg:text-[36px] xl:text-[48px] font-normal leading-[120%] uppercase mb-1.5 md:mb-2 transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#121C3D]"
+                >
+                  Pay 25%
+                </div>
+                <span
+                  class="anton text-[#1F2021] text-xs lg:text-base font-normal leading-[120%] uppercase"
+                >
+                  Due at design approval
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="group bg-[#1F2021] roofing-clip-top-bottom p-[1.5px] transition-all duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] hover:bg-[#1B59DA] hover:-translate-y-2 hover:shadow-[0_24px_50px_-16px_rgba(27,89,218,0.35)]"
+          >
+            <div
+              class="roofing-clip-top-bottom relative z-10 bg-white p-4 md:p-5 lg:p-6 xl:p-8 flex flex-col justify-between h-full"
+            >
+              <div>
+                <!-- Top Badge -->
+                <div
+                  class="inline-flex items-center justify-center gap-2 bg-[#1B59DA] anton text-white text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-6 pr-2.5 pl-4 py-1.5 md:pr-3 md:pl-5 uppercase mb-4 md:mb-5 xl:mb-8 [clip-path:polygon(12px_0,100%_0,100%_100%,0_100%,0_12px)] transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:bg-[#121C3D]"
+                >
+                  <img
+                    src="assets/images/roofing-payment-rocket.svg"
+                    alt=""
+                    class="w-3.5 md:w-4.5 lg:w-6 object-contain"
+                  />
+                  Launch
+                </div>
+
+                <!-- Title & Description -->
+                <h3
+                  class="anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase mb-3 md:mb-2 lg:mb-3 xl:mb-4"
+                >
+                  Launch and Support
+                </h3>
+                <p
+                  class="farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%]"
+                >
+                  The final payment is due when your finished website goes live.
+                  Your month of included support starts the sarne day
+                </p>
+              </div>
+
+              <!-- Bottom Payment Details -->
+              <div class="mt-4 sm:mt-6 md:mt-7 lg:mt-8">
+                <span
+                  class="block anton text-[#1F2021] text-sm md:text-base lg:text-lg xl:text-xl font-normal leading-[120%] uppercase mb-1.5 md:mb-2"
+                >
+                  On Completed
+                </span>
+                <div
+                  class="anton text-[#1B59DA] text-[30px] md:text-[32px] lg:text-[36px] xl:text-[48px] font-normal leading-[120%] uppercase mb-1.5 md:mb-2 transition-colors duration-800 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:text-[#121C3D]"
+                >
+                  Pay 25%
+                </div>
+                <span
+                  class="anton text-[#1F2021] text-xs lg:text-base font-normal leading-[120%] uppercase"
+                >
+                  Due at launch
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nine features roofers actually use (and most websites skip) -->
+    <section class="bg-[#D0E5F6] py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- Grid Container: Left text & Right cards -->
+        <div
+          class="grid grid-cols-1 xl:grid-cols-12 gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+        >
+          <!-- Left Column: Heading & Description -->
+          <div class="xl:col-span-5 flex flex-col text-center xl:text-start">
+            <div
+              class="flex flex-col gap-3 lg:gap-4 xl:gap-6 xl:sticky xl:top-20"
+            >
+              <h2
+                class="roofing-heading-reveal anton text-[#1F2021] text-[28px] md:text-[40px] lg:text-[52px] xl:text-[64px] font-normal leading-[110%] uppercase"
+              >
+                Nine features roofers actually use (and most websites skip)
+              </h2>
+
+              <p
+                class="farro text-[#3B3F42] text-xs md:text-base lg:text-lg font-normal leading-[150%]"
+              >
+                Every feature on this list exists because we've seen it move the
+                needle on booked leads. Nothing here is decoration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: 2x2 Grid of Cards -->
+          <div
+            class="xl:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-stretch"
+          >
+            <!-- Card 1 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/insurance-claim-assistance-messaging-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/insurance-claim-assistance-messaging-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Insurance claim assistance messaging
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Visible claim help language, carrier experience list,
+                  supplement support, adjuster meeting availability — wins the
+                  storm-damage homeowner who has been burned by a chaser.
+                </p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/financing-partnership-badges-with-monthly-pricing-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/financing-partnership-badges-with-monthly-pricing-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Financing partnership badges with monthly pricing
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  GreenSky, Sunlight, Service Finance, Hearth visible on every
+                  service page with as-low-as-$X/month messaging for the
+                  leveraged buyer.
+                </p>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/manufacturer-certifications-in-the-header-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/manufacturer-certifications-in-the-header-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Manufacturer certifications in the header
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  GAF Master Elite, Owens Corning Platinum Preferred,
+                  CertainTeed SELECT, IKO Shield Pro — credentials that unlock
+                  enhanced warranty and signal serious roofer.
+                </p>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/storm-response-auto-banner-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/storm-response-auto-banner-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Storm response auto-banner
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Homepage banner activates after major weather events — Storm
+                  damage in [area]? We are booking emergency inspections this
+                  week. Drives the surge that pays for the slow months.
+                </p>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/material-comparison-pages-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/material-comparison-pages-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Material comparison pages
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Per-material pages (asphalt, architectural, metal, tile,
+                  slate, TPO, EPDM) with cost ranges, lifespan, weather
+                  suitability — each ranks separately and captures
+                  research-stage homeowners.
+                </p>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/free-inspection-booking-flow-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/free-inspection-booking-flow-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Free inspection booking flow
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Address, roof type, age, current issue, ZIP — routes into
+                  AccuLynx or JobNimbus and triggers CallRail text-back within
+                  minutes.
+                </p>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/before-and-after-project-gallery-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/before-and-after-project-gallery-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Before-and-after project gallery
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Real projects filtered by job type (storm damage, full reroof,
+                  repair, metal install, commercial flat). EagleView measurement
+                  screenshots optional.
+                </p>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/service-area-map-with-response-time-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/service-area-map-with-response-time-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Service area map with response time
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Visible ZIP coverage with response-time commitment —
+                  inspections within 48 hours, emergency repairs within 24.
+                </p>
+              </div>
+            </div>
+            <!-- Card 9 -->
+            <div
+              class="roofing-feature-card roofing-feature-card--blue h-full bg-white p-4 md:p-6 xl:p-8 xl:pb-12 flex flex-col justify-between roofing-clip-top-bottom relative overflow-hidden"
+            >
+              <div>
+                <!-- Icon badge: red icon + white icon stacked, crossfade on hover -->
+                <div
+                  class="roofing-feature-icon relative w-12 h-12 md:w-15 md:h-15 lg:w-16 lg:h-16 xl:w-18 xl:h-18 mb-3 md:mb-5 xl:mb-8"
+                >
+                  <img
+                    src="assets/images/warranty-information-page-blue.svg"
+                    alt=""
+                    class="icon-default absolute inset-0 w-full h-full object-contain"
+                  />
+                  <img
+                    src="assets/images/warranty-information-page-white.svg"
+                    alt=""
+                    class="icon-hover absolute inset-0 w-full h-full object-contain opacity-0"
+                  />
+                </div>
+                <h3
+                  class="roofing-feature-title anton text-[#121C3D] text-lg md:text-[22px] lg:text-[28px] xl:text-[32px] font-normal leading-[120%] uppercase"
+                >
+                  Warranty information page
+                </h3>
+                <p
+                  class="roofing-feature-desc farro text-[#4F5357] text-xs md:text-sm xl:text-base font-normal leading-[150%] mt-2.5 md:mt-3 lg:mt-3.5 xl:mt-4"
+                >
+                  Workmanship warranty terms, manufacturer warranty options (GAF
+                  Golden Pledge, Owens Corning System Protection),
+                  transferability rules — the trust page during comparison
+                  shopping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Roofing Website at Only $999 -->
+    <section
+      class="cta-sections overflow-hidden section-padding bg-[#1F2021] text-center relative"
+    >
+      <img
+        src="assets/images/shape-top.png"
+        class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt
+      />
+      <img
+        src="assets/images/shape-right.png"
+        class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt
+      />
+
+      <div class="container">
+        <div class="cta-wrap z-80 relative">
+          <div class="max-w-184 mx-auto">
+            <div
+              class="roofing-section-heading text-center max-w-184 mx-auto md:mb-12 mb-6"
+            >
+              <h2
+                class="roofing-heading-reveal anton text-white font-normal text-[28px] md:text-[48px] lg:text-[52px] xl:text-[64px] leading-[110%] uppercase"
+              >
+                Roofing Website at Only $999
+              </h2>
+              <p
+                class="farro text-white text-xs md:text-base lg:text-lg font-normal leading-[150%] mt-3 md:mt-6 lg:mt-4 xl:mt-6"
+              >
+                If you have a plan, we’re ready to make it happen. Just share
+                your concerns, goals, and vision and we’ll get to work
+                immediately.
+              </p>
+
+              <div class="flex justify-center mt-6 md:mt-8 lg:mt-6 xl:mt-8">
+                <!-- secondary button -->
+                <a
+                  href="#"
+                  class="group bg-[#1B59DA] hover:bg-[#DE4442] flex justify-center items-center gap-6 pl-8 pr-1 py-1 transition-colors duration-300 ease-out farro"
+                >
+                  <span
+                    class="text-white text-sm md:text-base lg:text-lg font-medium leading-none"
+                    >Book a Free 30-Min Call</span
+                  >
+                  <span
+                    class="relative w-10 h-10 md:w-12 md:h-12 lg:w-13 lg:h-13 bg-white flex justify-center items-center shrink-0 overflow-hidden transition-transform duration-300 ease-out group-hover:scale-105"
+                  >
+                    <img
+                      src="assets/images/roofing-cta-arrow-icon.svg"
+                      alt="arrow"
+                      class="absolute w-5 h-5 lg:w-6 lg:h-6 transition-all duration-300 ease-out group-hover:translate-x-8 group-hover:-translate-y-8 group-hover:opacity-0"
+                    />
+                    <img
+                      src="assets/images/roofing-cta-arrow-icon-red.svg"
+                      alt="Arrow"
+                      class="absolute w-5 h-5 lg:w-6 lg:h-6 -translate-x-8 translate-y-8 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-0 group-hover:translate-y-0 group-hover:opacity-100"
+                    />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer class="relative">
+      <div
+        class="bg-[#1F2021] text-white border-t border-b border-[#293F70] farro"
+      >
+        <div class="container">
+          <!-- Desktop Grid Layout -->
+          <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+            <div
+              class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#293F70]"
+            >
+              <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+                <!-- Services Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Services
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="mobile-app-design.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >MOBILE APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="dashboard-design.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >DASHBOARD DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="website-design.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEBSITE DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="web-application-design.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEB APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="saas-design.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >SAAS DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="branding-design.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BRANDING</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Pixxen Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Pixxen
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >ABOUT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CONTACT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="career.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CAREER</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="team.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TEAM</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Resources
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="case-study.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CASE STUDIES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="blog.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BLOGS</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Legal
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="terms.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TERMS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="privacy.html"
+                        class="text-white hover:text-[#1B59DA] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >PRIVACY</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Copyright -->
+              <div
+                class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-[#293F70] lg:border-0 md:block hidden"
+              >
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div
+              class="md:pl-10 lg:pl-14 md:border-l border-[#293F70] lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5"
+            >
+              <div>
+                <p
+                  class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4"
+                >
+                  Join 5,000+ design lovers.
+                </p>
+                <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">
+                  Monthly design insights, case studies, and inspiration
+                  straight to your inbox.
+                </p>
+
+                <!-- Email Input -->
+                <div class="relative mb-3 md:mb-8 lg:mb-12">
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    class="w-full bg-transparent border border-[#293F70] rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#ffffff] focus:outline-none focus:border-[#1B59DA] transition-colors text-[12px] sm:text-sm lg:text-base pr-14"
+                  />
+                  <button
+                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-[#293F70] hover:bg-[#1B59DA] p-5 rounded-r-2xl transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.2288 9.03763L9.0768 1.88561L10.9624 0L21.3333 10.371L10.9624 20.7418L9.0768 18.8562L16.2288 11.7043H0V9.03763H16.2288Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Icons -->
+              <div
+                class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2"
+              >
+                <a
+                  href="#"
+                  class="bg-white hover:bg-[#1B59DA] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                      fill="#1F2021"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-white hover:bg-[#1B59DA] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                      fill="#1F2021"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-white hover:bg-[#1B59DA] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                      fill="#1F2021"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-white hover:bg-[#1B59DA] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                      fill="#1F2021"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Copyright -->
+              <div class="mt-1 flex justify-center md:hidden">
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[linear-gradient(180deg,#1F2021_0%,#1B59DA_100%)] sticky -z-10 bottom-0 left-0 w-full flex justify-center items-end"
+      >
+        <div class="flex justify-center text-center">
+          <img
+            src="assets/images/roofing-footer-pixxen-logo.svg"
+            class="img-fluid w-full object-contain"
+            alt="footerlogo"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
