@@ -283,19 +283,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 
 document.addEventListener("DOMContentLoaded", () => {
-    gsap.registerPlugin(ScrollTrigger, SplitText);
+  gsap.registerPlugin(ScrollTrigger, SplitText);
 
-    gsap.utils.toArray(".roofing-heading-reveal").forEach((heading) => {
-      // Split into lines, GSAP handles the wrapping/masking automatically
-      const split = new SplitText(heading, {
+  const headings = gsap.utils.toArray(".roofing-heading-reveal");
+
+  headings.forEach((heading) => {
+    let split;
+
+    const createAnimation = () => {
+      // Clean up the previous SplitText instance
+      if (split) {
+        split.revert();
+      }
+
+      // Create a new split based on the current screen width
+      split = new SplitText(heading, {
         type: "lines",
         linesClass: "split-line",
-        mask: "lines", // built-in overflow mask on each line — clean clip on entry
+        mask: "lines",
       });
 
-      gsap.from(split.lines, {
+      // Set initial state
+      gsap.set(split.lines, {
         yPercent: 110,
         opacity: 0,
+      });
+
+      // Create animation
+      gsap.to(split.lines, {
+        yPercent: 0,
+        opacity: 1,
         duration: 1,
         stagger: 0.12,
         ease: "power4.out",
@@ -303,7 +320,81 @@ document.addEventListener("DOMContentLoaded", () => {
           trigger: heading,
           start: "top 85%",
           toggleActions: "play none none none",
+          invalidateOnRefresh: true,
         },
       });
+    };
+
+    createAnimation();
+
+    // Re-split when the window is resized
+    let resizeTimer;
+
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+
+      resizeTimer = setTimeout(() => {
+        // Kill existing ScrollTrigger for this heading
+        ScrollTrigger.getAll().forEach((trigger) => {
+          if (trigger.trigger === heading) {
+            trigger.kill();
+          }
+        });
+
+        createAnimation();
+
+        // Refresh ScrollTrigger positions
+        ScrollTrigger.refresh();
+      }, 250);
     });
   });
+});
+
+
+// Roofing niche image rotate
+document.querySelectorAll('.roofing-spacification-niche').forEach(row => {
+  const img = row.querySelector('img');
+  const base = gsap.getProperty(img, "rotation"); // or set manually
+  row.addEventListener('mouseenter', () => gsap.to(img, { rotation: -5, duration: 0.5, ease: "power2.out" }));
+  row.addEventListener('mouseleave', () => gsap.to(img, { rotation: base, duration: 0.5, ease: "power2.out" }));
+});
+
+
+// 
+(function () {
+  const list = document.getElementById("roofing-faq-list");
+  if (!list) return;
+
+  const items = list.querySelectorAll(".roofing-faq-item");
+
+  function setOpen(item, open) {
+    const trigger = item.querySelector(".roofing-faq-trigger");
+    const panel = item.querySelector(".roofing-faq-panel");
+    const icon = item.querySelector(".roofing-faq-icon");
+    const title = item.querySelector(".roofing-faq-title");
+
+    trigger.setAttribute("aria-expanded", String(open));
+    panel.classList.toggle("grid-rows-[0fr]", !open);
+    panel.classList.toggle("grid-rows-[1fr]", open);
+    
+    // Rotate plus icon into an "x" when open
+    icon.classList.toggle("rotate-45", open);
+
+    // Toggle title text color
+    title.classList.toggle("text-[#1B59DA]", open);
+    title.classList.toggle("text-[#1F2021]", !open);
+  }
+
+  items.forEach((item) => {
+    item.querySelector(".roofing-faq-trigger").addEventListener("click", () => {
+      const trigger = item.querySelector(".roofing-faq-trigger");
+      const isOpen = trigger.getAttribute("aria-expanded") === "true";
+
+      // One open at a time: close the others first
+      items.forEach((other) => {
+        if (other !== item) setOpen(other, false);
+      });
+      setOpen(item, !isOpen);
+    });
+  });
+})();

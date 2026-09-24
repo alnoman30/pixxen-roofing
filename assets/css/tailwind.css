@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Farro:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Farro:wght@300;400;500;700&family=Koulen&display=swap');
 
 @import "tailwindcss";
 
@@ -44,6 +44,11 @@
 
 .anton {
   font-family: "Anton", sans-serif;
+  font-style: normal;
+}
+
+.koulen {
+  font-family: "Koulen", sans-serif;
   font-style: normal;
 }
 
@@ -958,3 +963,42 @@ html.lenis body {
   background-color: #1B59DA;
   box-shadow: 0 20px 40px -12px rgba(27, 89, 218, 0.35);
 }
+
+
+
+.roofing-niche-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "title"
+        "image"
+        "desc";
+      align-items: start;
+      row-gap: 1.5rem;
+    }
+    .roofing-niche-title  { grid-area: title; text-align: left; }
+    .roofing-niche-desc   { grid-area: desc; text-align: left; }
+    .roofing-niche-image  { grid-area: image; justify-self: center; } /* Keeps image centered on mobile */
+ 
+    /* Tablet */
+    @media (min-width: 768px) {
+      .roofing-niche-row {
+        grid-template-columns: 1fr minmax(0, 300px);
+        grid-template-areas:
+          "title image"
+          "desc  image";
+        column-gap: 2rem;
+        row-gap: 1rem;
+      }
+      .roofing-niche-image { justify-self: start; } /* Aligns left on larger screens if needed */
+    }
+ 
+    /* Desktop */
+    @media (min-width: 1024px) {
+      .roofing-niche-row {
+        grid-template-columns: 1.2fr 1fr 1.4fr;
+        grid-template-areas: "title image desc";
+        column-gap: 2.5rem;
+      }
+      .roofing-niche-image { justify-self: start; }
+    }
